@@ -31,3 +31,7 @@
   height: auto;
   position: absolute;
 }
+
+.form-row input {
+  flex: 1;
+}

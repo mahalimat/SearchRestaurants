@@ -34,12 +34,16 @@ class App extends Component {
 
     return !restaurants.length ? (
       <div className="container bgimage">
-        <h3>Search Resturants</h3>
+        <header>
+          <h3>Search Resturants</h3>
+        </header>
         <SearchBar onSubmit={this.onSearchSubmit} />
       </div>
     ) : (
       <div className="container bgimage">
-        <h3>Search Resturants</h3>
+        <header>
+          <h3>Search Resturants</h3>
+        </header>
         <SearchBar onSubmit={this.onSearchSubmit} />
         <br />
         <RefineBar refineChange={this.onRefineFieldChange} />

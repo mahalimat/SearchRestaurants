@@ -16,12 +16,11 @@ class SearchBar extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="form-row input">
         <form onSubmit={this.onFormSubmit}>
           <div>
             <label htmlFor="searchInput">Enter the city:</label>
             <input
-              id="searchInput"
               type="text"
               aria-label="search"
               aria-required="true"
