@@ -1,8 +1,9 @@
 import React from "react";
+import "./App.css";
 
 const Card = ({ name, address, price }) => {
   return (
-    <div>
+    <div className="card">
       <div>
         <h2>Name: {name}</h2>
         <h3>Address: {address}</h3>

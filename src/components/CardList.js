@@ -1,9 +1,10 @@
 import React from "react";
 import Card from "./Card";
+import "./App.css";
 
 const CardList = ({ restaurants }) => {
   return (
-    <div>
+    <div className="cards">
       {restaurants.map((restaurant, i) => {
         return (
           <Card
