@@ -6,8 +6,6 @@ export const fetchRestaurants = city => async dispatch => {
     `http://opentable.herokuapp.com/api/restaurants?city=${city}`
   );
 
-  console.log(response.data.restaurants);
-
   dispatch({ type: FETCH_RESTAURANTS, payload: response.data.restaurants });
 };
 
