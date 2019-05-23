@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { fetchRestaurants, setRefineField } from "../actions";
 import SearchBar from "./SearchBar";
-import Scroll from "./Scroll";
 import CardList from "./CardList";
 import RefineBar from "./RefineBar";
+import "./App.css";
 
 class App extends Component {
   onSearchSubmit = city => {
@@ -33,18 +33,18 @@ class App extends Component {
         });
 
     return !restaurants.length ? (
-      <div>
+      <div className="container">
         <h3>Search Resturants</h3>
         <SearchBar onSubmit={this.onSearchSubmit} />
       </div>
     ) : (
-      <div className="ui conatiner">
+      <div className="container">
         <h3>Search Resturants</h3>
         <SearchBar onSubmit={this.onSearchSubmit} />
+        <br />
         <RefineBar searchChange={this.onRefineFieldChange} />
-        <Scroll>
-          <CardList restaurants={filteredRestuarants} />
-        </Scroll>
+
+        <CardList restaurants={filteredRestuarants} />
       </div>
     );
   }
