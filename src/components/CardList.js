@@ -4,7 +4,7 @@ import "./App.css";
 
 const CardList = ({ restaurants }) => {
   return (
-    <div className="cards">
+    <ul className="cards">
       {restaurants.map((restaurant, i) => {
         return (
           <Card
@@ -15,7 +15,7 @@ const CardList = ({ restaurants }) => {
           />
         );
       })}
-    </div>
+    </ul>
   );
 };
 

@@ -1,13 +1,13 @@
 import React from "react";
 
-const RefineBar = ({ searchChange }) => {
+const RefineBar = ({ refineChange }) => {
   return (
     <div>
       <label htmlFor="refineInput">Refine search:</label>
       <input
         id="refineInput"
         type="search"
-        onChange={searchChange}
+        onChange={refineChange}
         aria-label="refine"
         aria-required="true"
         name="refine"

@@ -33,16 +33,16 @@ class App extends Component {
         });
 
     return !restaurants.length ? (
-      <div className="container">
+      <div className="container bgimage">
         <h3>Search Resturants</h3>
         <SearchBar onSubmit={this.onSearchSubmit} />
       </div>
     ) : (
-      <div className="container">
+      <div className="container bgimage">
         <h3>Search Resturants</h3>
         <SearchBar onSubmit={this.onSearchSubmit} />
         <br />
-        <RefineBar searchChange={this.onRefineFieldChange} />
+        <RefineBar refineChange={this.onRefineFieldChange} />
 
         <CardList restaurants={filteredRestuarants} />
       </div>

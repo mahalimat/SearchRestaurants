@@ -3,6 +3,7 @@
   flex-flow: row wrap;
   justify-content: space-around;
   flex-direction: column;
+  background-color: aqua;
 }
 
 .cards {
@@ -19,4 +20,14 @@
   border-bottom: 1px solid;
   margin-top: 15px;
   margin-left: -1px;
+  margin-right: -1px;
+}
+
+.bgimage {
+  background: url("./rest.jpg") no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  position: absolute;
 }
