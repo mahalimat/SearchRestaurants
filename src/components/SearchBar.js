@@ -18,11 +18,15 @@ class SearchBar extends React.Component {
       <div>
         <form onSubmit={this.onFormSubmit}>
           <div>
-            <label>Enter the city:</label>
+            <label htmlFor="searchInput">Enter the city:</label>
             <input
+              id="searchInput"
               type="text"
+              aria-label="search"
+              aria-required="true"
               value={this.state.city}
               onChange={this.onInputChange}
+              name="search"
             />
           </div>
         </form>
