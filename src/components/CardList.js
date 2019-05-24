@@ -9,6 +9,7 @@ const CardList = ({ restaurants }) => {
         return (
           <Card
             key={i}
+            image_url={restaurants[i].image_url}
             name={restaurants[i].name}
             address={restaurants[i].address}
             price={restaurants[i].price}
