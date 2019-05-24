@@ -4,11 +4,11 @@ import "./App.css";
 const Card = ({ name, address, price }) => {
   return (
     <ul className="card">
-      <Fragment>
+      <li>
         <h2>{name}</h2>
-        <h3>{address}</h3>
-        <h3>${price}</h3>
-      </Fragment>
+        <p>{address}</p>
+        <p>${price}</p>
+      </li>
     </ul>
   );
 };

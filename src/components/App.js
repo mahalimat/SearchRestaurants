@@ -35,14 +35,14 @@ class App extends Component {
     return !restaurants.length ? (
       <div className="container bgimage">
         <header>
-          <h3>Search Resturants</h3>
+          <h1>Search Resturants</h1>
         </header>
         <SearchBar onSubmit={this.onSearchSubmit} />
       </div>
     ) : (
       <div className="container bgimage">
         <header>
-          <h3>Search Resturants</h3>
+          <h1>Search Resturants</h1>
         </header>
         <SearchBar onSubmit={this.onSearchSubmit} />
         <br />
