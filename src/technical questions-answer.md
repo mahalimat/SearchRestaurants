@@ -5,7 +5,7 @@ I can get a better understanding of the restuarants and pricing. As a user I wan
 
 1.  How long did you spend on the coding test? What would you add to your solution if you had more time? If you didn't spend much time on the coding test then use this as an opportunity to explain what you would add.
 
-         I’ve spend 4-5 hours to implement the main functionality. If I have more time, I would add image of the restaurant in the display list. Also, I would add clickable link, when users click the link it will navigate to another page where users can view full details of the restaurant and make reservation.
+         I’ve spend 14-15 hours. If I have more time, I would add clickable link, when users click the link it will navigate to another page where users can view full details of the restaurant and make reservation.
 
 2.  What was the most useful feature that was added to the latest version of your chosen language? Please include a snippet of code that shows how you've used it.
 

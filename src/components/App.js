@@ -8,13 +8,10 @@ import "./App.css";
 
 class App extends Component {
   onSearchSubmit = city => {
-    console.log(this.props);
     this.props.fetchRestaurants(city);
   };
 
   onRefineFieldChange = event => {
-    console.log(event);
-    console.log(this.props);
     this.props.setRefineField(event.target.value);
   };
 
@@ -33,16 +30,16 @@ class App extends Component {
         });
 
     return !restaurants.length ? (
-      <div className="container bgimage">
-        <header>
-          <h1>Search Resturants</h1>
+      <div className="container">
+        <header className="header">
+          <h1>Search Restaurants</h1>
         </header>
         <SearchBar onSubmit={this.onSearchSubmit} />
       </div>
     ) : (
-      <div className="container bgimage">
-        <header>
-          <h1>Search Resturants</h1>
+      <div className="container">
+        <header className="header">
+          <h1>Search Restaurants</h1>
         </header>
         <SearchBar onSubmit={this.onSearchSubmit} />
         <br />

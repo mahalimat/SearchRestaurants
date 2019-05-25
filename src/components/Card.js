@@ -1,25 +1,14 @@
-import React, { Fragment } from "react";
+import React from "react";
 import "./App.css";
 
 const Card = ({ name, address, price, image_url }) => {
   return (
-    <ul className="card">
-      <img
-        src={image_url}
-        className="card-img-top rounded float-left"
-        alt={name}
-      />
-
-      <li>
-        <h2>{name}</h2>
-      </li>
-      <li>
-        <p>{address}</p>
-      </li>
-      <li>
-        <p>${price}</p>
-      </li>
-    </ul>
+    <li className="card">
+      <img src={image_url} className="card-img-top" alt={name} />
+      <h2 className="card-items">{name}</h2>
+      <p className="card-items">{address}</p>
+      <p className="card-items">{Array(price).fill("$")}</p>
+    </li>
   );
 };
 

@@ -1,19 +1,36 @@
 .container {
-  display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
   flex-direction: column;
-  background-color: aqua;
+  background-color: aquamarine;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+  position: absolute;
+  min-height: 100%;
+  margin-left: -8px;
+  margin-top: -8px;
+}
+
+.header {
+  text-align: center;
+  padding-top: 0px;
+}
+
+.input {
+  height: 10px;
+  text-align: center;
+  padding-top: 10px;
 }
 
 .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  list-style: none;
 }
 
 .card {
-  flex: 1 1 10%;
+  flex: 1 1 auto;
   border-top: 1px solid;
   border-left: 1px solid;
   border-right: 1px solid;
@@ -23,11 +40,13 @@
   margin-left: -20px;
 }
 
-.bgimage {
-  background: url("./rest.jpg") no-repeat;
-  background-size: cover;
-  min-height: 100%;
+.card-img-top {
   width: 100%;
-  height: auto;
-  position: absolute;
+  height: 25vw;
+  object-fit: cover;
+}
+
+.card-items {
+  width: 100%;
+  text-align: center;
 }

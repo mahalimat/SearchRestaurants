@@ -16,7 +16,7 @@ class SearchBar extends React.Component {
 
   render() {
     return (
-      <div className="form-row input">
+      <div className="input">
         <form onSubmit={this.onFormSubmit}>
           <div>
             <label htmlFor="searchInput">Enter the city:</label>
